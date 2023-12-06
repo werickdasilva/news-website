@@ -1,0 +1,29 @@
+---
+import Button from "./../widgets/Button.astro";
+
+export type Props = {
+    class?: string
+};
+
+const { class: className = '' }: Props = Astro.props;
+---
+
+<div class={className}>
+    <h3 class="text-lg font-semibold mb-3">Location News</h3>
+    <div class="bg-white p-4">
+        <h4 class="text-[14px] font-normal font-nunito">
+            Get Location specific News
+        </h4>
+        <div class="border border-input rounded-sm pl-4 py-3 my-5">
+            <input
+                class="font-montserrat text-[14px] outline-none font-light placeholder:text-input"
+                type="text"
+                placeholder="Enter Your Location"
+            />
+        </div>
+        <Button
+            class="bg-card rounded-sm text-white px-5 py-[14px]"
+            text="SUBMIT"
+        />
+    </div>
+</div>

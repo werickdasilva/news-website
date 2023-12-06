@@ -1,0 +1,48 @@
+---
+import IconLike from "./../icons/IconLike.astro";
+import IconShare from "./../icons/IconShare.astro";
+import IconBookmark from "./../icons/IconBookmark.astro";
+---
+
+<section class="mx-auto ">
+    <div class="flex mt-8 lg:justify-between">
+        <img
+            src="/imgs/photos-fruits.jpg"
+            alt="Photo fruits"
+            class="hidden  lg:block rounded-md max-w-[450px]"
+        />
+        <div class="lg:flex lg:flex-col lg:w-[540px]">
+            <div class="my-3 flex justify-between items-center">
+                <span class="text-second text-sm font-semibold">Trending</span>
+                <div class="flex gap-x-5">
+                    <IconLike />
+                    <IconShare />
+                    <IconBookmark />
+                </div>
+            </div>
+            <h1 class="text-2xl lg:text-3xl font-semibold font-ibm text-left">
+                Cake meme reflects coronavirus absurdity in a world where nothing is
+                what it seems
+            </h1>
+            <img
+                src="/imgs/photos-fruits.jpg"
+                alt="Photo fruits"
+                class="mt-8 rounded-md lg:hidden"
+            />
+            <p class="my-5 text-sm lg:text-[15px] font-normal leading-[165%] text-left">
+                Earlier this month, a viral video depicting hyper-realistic cakes as
+                everyday items had folks on social media double-guessing every other
+                post, and sometimes even their own realities, effectively launching
+                the next meme : “Is this real or is this cake?”
+            </p>
+            <div>
+                <time class="text-[12px] font-normal" datetime="2:00"
+                    >2 hours ago</time
+                >
+                <span class="text-[12px] opacity-70 mx-5"
+                    >By Lucy Hiddleston | 4min read</span
+                >
+            </div>
+        </div>
+    </div>
+</section>

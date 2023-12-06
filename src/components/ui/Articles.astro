@@ -1,0 +1,183 @@
+---
+import IconBookmark from "../icons/IconBookmark.astro";
+import IconLike from "../icons/IconLike.astro";
+import IconLikeFill from "../icons/IconLikeFill.astro";
+import IconShare from "../icons/IconShare.astro";
+import OrderArticle from "../icons/OrderArticle.astro";
+import LocationNews from "./LocationNews.astro";
+import UserLive from "./UserLive.astro";
+---
+
+<section class="mt-6">
+    <div class="flex justify-between py-2 bg-white mb-5 px-5">
+        <div>
+            <span class="text-[14px] font-semibold">Latest Stories</span>
+            <span class="text-[14px] font-semibold">Think</span>
+            <span class="text-[14px] font-semibold">Health</span>
+        </div>
+        <div>
+            <OrderArticle />
+        </div>
+    </div>
+    <div class="container w-11/12 mx-auto mt-8 lg:flex">
+        <div class=" lg:flex flex-wrap justify-center gap-x-10">
+            <article class="max-w-sm bg-white my-5 rounded-md shadow-card">
+                <img
+                    src="/imgs/image-post-01.jpg"
+                    alt="Image Post 01"
+                    class="rounded-t-md mb-5"
+                />
+                <h2 class="text-[14px] font-semibold font-ibm mb-2">
+                    John Lewis to make final journey across Edmund Pettus Bridge
+                    in procession
+                </h2>
+                <p class="font-semibold font-nunito text-[13px]">
+                    The body of the late US Rep. John Lewis on Sunday will make
+                    the final journey across the famous bridge in Selma,
+                    Alabama, where he helped lead a march for voting rights in
+                    1965.
+                </p>
+                <div class="my-5">
+                    <time class="text-[12px] font-normal" datetime="2:00"
+                        >2 hours ago</time
+                    >
+                    <span class="text-[12px] opacity-70 mx-5"
+                        >By Lucy Hiddleston | 4min read</span
+                    >
+                </div>
+                <hr class="border" />
+                <div class="flex justify-center gap-x-5 py-5">
+                    <div class="flex gap-x-2">
+                        <IconLikeFill class="w-[18px] h-4" />
+                        <span class="text-[10px]">28</span>
+                    </div>
+                    <div class="flex gap-x-2">
+                        <IconShare />
+                        <span class="text-[10px]">72</span>
+                    </div>
+                    <IconBookmark />
+                </div>
+            </article>
+            <article class="max-w-sm bg-white my-5 rounded-md shadow-card">
+                <img
+                    src="/imgs/image-post-02.jpg"
+                    alt="Image Post 02"
+                    class="rounded-t-md mb-5"
+                />
+                <h2 class="text-[14px] font-semibold font-ibm mb-2">
+                    John Lewis, civil rights giant, crosses infamous Selma
+                    bridge one final time
+                </h2>
+                <p class="font-semibold font-nunito text-[13px]">
+                    Solemn crowds watch as Lewis, who died earlier this month at
+                    the age of 80, is borne by caisson over Edmund Pettus Bridge
+                </p>
+                <div class="my-5">
+                    <time class="text-[12px] font-normal" datetime="4:00"
+                        >4 hours ago</time
+                    >
+                    <span class="text-[12px] opacity-70 mx-5"
+                        >By Caroline Casey | 4min read</span
+                    >
+                </div>
+                <hr class="border" />
+                <div class="flex justify-center gap-x-5 py-5">
+                    <div class="flex gap-x-2">
+                        <IconLikeFill class="text-second w-[18px] h-4" />
+                        <span class="text-[10px]">28</span>
+                    </div>
+                    <div class="flex gap-x-2">
+                        <IconShare />
+                        <span class="text-[10px]">72</span>
+                    </div>
+                    <IconBookmark />
+                </div>
+            </article>
+            <article
+                class="max-w-sm bg-white my-5 rounded-md hidden lg:block shadow-card"
+            >
+                <img
+                    src="/imgs/image-post-03.jpg"
+                    alt="Image Post 03"
+                    class="rounded-t-md mb-5"
+                />
+                <h2 class="text-[14px] font-semibold font-ibm mb-2">
+                    Tornado and tide warnings as Storm Hanna lashes Texas
+                </h2>
+                <p class="font-semibold font-nunito text-[13px]">
+                    The body of the late US Rep. John Lewis on Sunday will make
+                    the final journey across the famous bridge in Selma,
+                    Alabama, where he helped lead a march for voting rights in
+                    1965.
+                </p>
+                <div class="my-5">
+                    <time class="text-[12px] font-normal" datetime="5:00"
+                        >5 hours ago</time
+                    >
+                    <span class="text-[12px] opacity-70 mx-5"
+                        >By Lucy Hiddleston | 4min read</span
+                    >
+                </div>
+                <hr class="border" />
+                <div class="flex justify-center gap-x-5 py-5">
+                    <div class="flex gap-x-2">
+                        <IconLikeFill class="text-second w-[18px] h-4" />
+                        <span class="text-[10px]">28</span>
+                    </div>
+                    <div class="flex gap-x-2">
+                        <IconShare />
+                        <span class="text-[10px]">72</span>
+                    </div>
+                    <IconBookmark />
+                </div>
+            </article>
+            <article class="max-w-sm bg-white my-5 rounded-md shadow-card">
+                <img
+                    src="/imgs/image-post-04.jpg"
+                    alt="Image Post 04"
+                    class="rounded-t-md mb-5"
+                />
+                <h2 class="text-[14px] font-semibold font-ibm mb-2">
+                    20 Years Ago, Steve Jobs Built the ‘Coolest Computer Ever.’
+                    It Bombed
+                </h2>
+                <p class="font-semibold font-nunito text-[13px]">
+                    This month marks the 20th anniversary of the Power Mac G4
+                    Cube, which debuted July 19, 2000. It also marks the 19th
+                    anniversary of Apple’s announcement that it was putting the
+                    Cube on ice.
+                </p>
+                <div class="my-5">
+                    <time class="text-[12px] font-normal" datetime="12:00"
+                        >12 hours ago</time
+                    >
+                    <span class="text-[12px] opacity-70 mx-5"
+                        >By Lucy Hiddleston | 4min read</span
+                    >
+                </div>
+                <hr class="border" />
+                <div class="flex justify-center gap-x-5 py-5">
+                    <div class="flex gap-x-2">
+                        <IconLikeFill class="text-second w-[18px] h-4" />
+                        <span class="text-[10px]">28</span>
+                    </div>
+                    <div class="flex gap-x-2">
+                        <IconShare />
+                        <span class="text-[10px]">72</span>
+                    </div>
+                    <IconBookmark />
+                </div>
+            </article>
+        </div>
+        <div>
+            <UserLive class="hidden lg:block" />
+            <LocationNews class=""/>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <button
+            class="border border-btn text-second rounded-sm py-[22px] px-16 text-sm font-medium uppercase tracking-[1.8px] text-center"
+            >View More</button
+        >
+    </div>
+</section>

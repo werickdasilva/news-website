@@ -1,0 +1,23 @@
+---
+import Living from "../Living.astro";
+
+export type Props = {
+    class: string
+}
+
+const { class: className}: Props = Astro.props
+---
+
+<div class={className}>
+    <div class="relative lg:static">
+        <div class="absolute flex gap-x-3 text-lg font-semibold text-second p-[14px] lg:static lg:pl-0">
+            Live <div>
+                <Living />
+            </div>
+        </div>
+        <img src="/imgs/user-live.jpg" alt="User Live" class="rounded-sm" />
+    </div>
+    <h3 class="font-ibm text-base font-bold mt-3">
+        Beloved Arizona coach loses battle with coronavirus
+    </h3>
+</div>

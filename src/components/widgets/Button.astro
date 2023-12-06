@@ -1,0 +1,12 @@
+---
+export type Props = {
+    class: string
+    text: string
+}
+
+const { text , class: className}: Props = Astro.props
+---
+
+<button class={className}>
+    {text}
+</button>

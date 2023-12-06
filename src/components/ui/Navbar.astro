@@ -1,0 +1,35 @@
+---
+import IconMenu from "./../icons/IconMenu.astro";
+import IconSearch from "./../icons/IconSearch.astro";
+import IconUser from "./../icons/IconUser.astro";
+import NextRight from "./../icons/NextRight.astro";
+---
+
+<header class="bg-white">
+    <div class="container w-11/12 mx-auto">
+        <nav
+            class="h-20 flex items-center justify-between lg:max-w-6xl mx-auto"
+        >
+            <a href="/">
+                <img class="w-12 h-10" src="/imgs/logo.png" alt="Logo" />
+            </a>
+            <div class="hidden lg:flex items-center gap-x-8 text-primary">
+                <ul class="flex gap-x-2">
+                    <li class="text-base font-semibold">Politics</li>
+                    <li class="text-base font-semibold">Corona Updates</li>
+                    <li class="text-base font-semibold">Business</li>
+                    <li class="text-base font-semibold">Sports</li>
+                    <li class="text-base font-semibold">World</li>
+                    <li class="text-base font-semibold">Travel</li>
+                    <li class="text-base font-semibold">Podcasts</li>
+                </ul>
+                <NextRight class="text-primary w-3 h-3" />
+            </div>
+            <div class="flex gap-x-12">
+                <IconUser class="text-primary w-[14px] h-[18px]" />
+                <IconSearch class="text-primary w-[18px] h-[18px]" />
+                <IconMenu class="text-primary w-[18px] h-[18px]" />
+            </div>
+        </nav>
+    </div>
+</header>
